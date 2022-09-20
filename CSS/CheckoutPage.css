@@ -1,0 +1,243 @@
+@import './templates/body.css';
+@import './templates/navbar.css';
+@import './templates/footer.css';
+@import './templates/hover.css';
+
+body{
+    height: fit-content;
+}
+#all_container{
+    background-color: #F1F1F1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* GO BACK */
+#go_back_container{
+    width: 327px;
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#go_back{
+    width: 70px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #D87D4A;
+    border-radius: 8px;
+}
+#go_back a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+}
+/* FORM */
+#main_container{
+    width: 350px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#checkout_form{
+    width: 280px;
+    height: fit-content;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+    /* CHECKOUT TITLE */
+#checkout_title{
+    width: 327px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+    /* HEADERS TITLES */
+.form_headers{
+    color: #D87D4A;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+    /* CUSTOMER DETAILS */
+.customer_form{
+    width: 327px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+}
+.form_titles{
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.box_size{
+    width: 280px;
+    height: 56px;
+    border-radius: 8px;
+    border: 1px solid #CFCFCF;
+    display: flex;
+    justify-content: center;
+}
+.placeholders{
+    border: none;
+    width: 80%;
+}
+/* PAYMENT DETAILS */
+#options_container{
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.options{
+    width: 280px;
+    height: 56px;
+    border: 1px solid #CFCFCF;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+}
+.radio_btn{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+.radio_btn input{
+    border: 1px solid #D87D4A;
+}
+#e_money_form{
+    height: 250px;
+}
+
+/* SUMMARY */
+#summary{
+    width: 327px;
+    height: 612px;
+    background-color: #fff;
+    margin-bottom: 20%;
+}
+input:focus{
+    outline: none;
+}
+
+/* TABLET SIZE */
+@media only screen and (min-width: 768px) {
+
+    #main_container{
+        width: 730px;
+        height: fit-content;
+        margin-bottom: 100px;
+    }
+    /* GO BACK */
+    #go_back_container{
+        width: 689px;
+        height: 80px;
+        align-items: center;
+    }
+    /* CHECKOUT */
+    #checkout_form{
+        width: 689px;
+    }
+    #checkout_title{
+        width: 689px;
+    }
+    .box_size{
+        width: 309px;
+    }
+    /* CUSTOMER FORM */
+    .customer_form{
+        width: 689px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #customer_info{
+        width: 689px;
+    }
+    .customer_box{
+        width: 309px;
+        margin-right: 15px;
+    }
+    #adress_box{
+        width: 100%;
+    }
+    #adress_box_size{
+        width: 634px;
+    }
+    /* PAYMENT FORM */
+    #payment_method{
+        width: 326px;
+        font-size: 12px;
+        font-weight: 700;
+    }
+    #e_money{
+        display: flex;
+    }
+    .options{
+        width: 309px;
+    }
+    /* E-MONEY */
+    #e_money_form{
+        width: 689px;
+        height: 150px;
+        display: flex;
+    }
+    /* SUMMARY */
+    #summary{
+        width: 689px;
+        height: 612px;
+        border-radius: 8px;
+        margin: 0;
+    }
+}
+
+/* DESKTOP SIZE */
+@media only screen and (min-width: 1440px) {
+
+    #go_back_container{
+        width: 1110px;
+        align-items: center;
+    }
+    #summary{
+        width: 350px;
+        border: 2px solid blue;
+    }
+    #main_container{
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: flex-start;
+        width: 1110px;
+        height: fit-content;
+    }
+    #checkout_form{
+        width: 730px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #e_money{
+        width: 689px;
+    }
+    #payment_method{
+        width: 322px;
+    }
+    .form_headers{
+        width: 689px;
+    }
+}

@@ -1,0 +1,96 @@
+/* LISTENER SECTION */
+#listener{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    gap: 30px;
+}
+#listener_picture{
+    background-image: url('../../images/Homepage/Mobile/listener_picture.png');
+    width: 327px;
+    height: 300px;
+}
+#listener_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#listener h3{
+    font-size: 28px;
+    width: 87%;
+    height: 76px;
+    text-align: center;
+    margin-bottom: 5%;
+}
+#best{
+    color: #D87D4A;
+}
+
+#listener p{
+    width: 87%;
+    text-align: center;
+    height: 350px;
+}
+
+/* TABLET SIZE */
+    @media only screen and (min-width: 768px) {
+    
+    /* LISTENER SECTION */
+    #listener_picture{
+        background-image: url('../../images/Homepage/Tablet/listener_tablet.png');
+        width: 689px;
+        background-position: center center;
+        background-size: cover;
+        border-radius: 8px;
+    }
+    #listener h3{
+        font-size: 40px;
+        line-height: 44px;
+        letter-spacing: 1.43px;
+        width: 70%;
+    }
+    #listener p{
+        width: 70%;
+        height: 250px;
+    }
+}
+
+/* DESKTOP SIZE */
+    @media only screen and (min-width: 1440px) {
+
+    /* LISTENER SECTION */
+    #listener{
+        width: 1110px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        margin-top: 5%;
+        margin-bottom: 15%;
+    }
+    #listener_picture{
+        background-image: url('../../images/Homepage/Desktop/listener_picture_desktop.png');
+        width: 520px;
+        height: 580px;
+        grid-column: 2/3;
+        justify-self: end;
+    }
+    #listener_text{
+        width: 400px;
+        height: 600px;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        justify-content: center;
+        gap: 5%;
+    }
+    #listener h3{
+        width: 100%;
+        text-align: left;
+    }
+    #listener_text p{
+        width: 100%;
+        text-align: left;
+    } 
+}

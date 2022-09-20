@@ -1,0 +1,36 @@
+#category_title{
+    width: 100%;
+    height: 92px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    flex-shrink: 0;
+    margin-bottom: 15%;
+}
+
+ /* TABLET SIZE */
+@media only screen and (min-width: 768px) {
+    
+    /* CATEGORY TITLE */
+    #category_title{
+        height: 247px;
+    }
+    #category_title h4{
+        font-size: 40px;
+        letter-spacing: 1.43px;
+    }
+}
+
+     /* DESKTOP SIZE */
+@media only screen and (min-width: 1440px) {
+
+    /* CATEGORY TITLE */
+    #category_title{
+        height: 240px;
+    }
+    #category_title h4{
+        font-size: 40px;
+    }
+}

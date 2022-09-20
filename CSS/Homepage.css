@@ -1,0 +1,540 @@
+@import "./templates/body.css";
+@import "./templates/category.css";
+@import "./templates/listerner.css";
+@import "./templates/footer.css";
+@import "./templates/hover.css";
+
+#all_container{
+    width: 1440px;
+    height: fit-content;
+    flex-shrink: 0;
+}
+/* NAVIGATION BAR */
+#mainPage{
+    width: 100%;
+    background-color: #191919;
+    background-image: url('../images/Homepage/Mobile/Audiophile_Headphones.png');
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+}
+#navbar{
+    width: 100%;
+    height: 89px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transform: translateY(30%);
+    transition: 3s;
+}
+#logo{
+    width: 145px;
+}
+#nav_menu_up{
+    width: 60%;
+    height: 80px;
+    display: none;
+}
+#nav_menu_up a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    line-height: 25px;
+}
+i{
+    color: #fff;
+    font-size: 23px;
+}
+#menu_bars{
+    position: relative;
+}
+#myDropdown{
+    position: absolute;
+    top: 30px;
+    display: flex;
+    flex-direction: column;
+    /* z-index: 5; */
+    width: 200px;
+    height: 500px;
+    background-color: #D87D4A;
+    display: none;
+}
+.link_container{
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#myDropdown a{
+    color: #fff;
+    text-decoration: none;
+}
+#separation_line{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+}
+/* NEW PRODUCT PAGE */
+#pic_text{
+    height: 100%;
+    /* transform: translateX(-200%); */
+    opacity: 0;
+    transition: 3s;
+}
+#new_pdt_page{
+   width: 100%;
+   height: 511px;
+   color: #fff;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   gap: 5%;
+}
+#new_pdt_text{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7%;
+}
+#new_pdt_page p{
+    opacity: 75%;
+}
+
+#new_pdt_page h1{
+    font-size: 36px;
+    line-height: 40px;
+}
+#pic_text{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+#new_product{
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+.see_pdt_btn{
+    width: 160px;
+    height: 48px;
+    background-color: #D87D4A;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/* MODELS SECTION */
+#models_grid{
+    display: grid;
+    grid-template-rows: repeat(8, minmax(75px, auto));
+    gap: 25px;
+    padding-top: 100px;
+    position: relative;
+}
+
+#zx9_model{
+    grid-row: 1/5;
+    background-color: #D87D4A;
+    height: 600px;
+    width: 327px;
+    border-radius: 8px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+#zx9_model_picture{
+    background-image: url('../images/Homepage/Mobile/zx9_model.png');
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+#inner_circle{
+    width: 279px;
+    height: 279px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    opacity: 0.3;
+    position: absolute;
+    top: 24px;
+    left: 24px;
+}
+#middle_circle{
+    width: 320px;
+    height: 320px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    opacity: 0.3;
+    position: absolute;
+    top: 3.5px;
+    left: 3.5px;
+}
+#outer_circle{
+    width: 558px;
+    height: 558px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    opacity: 0.3;
+    position: absolute;
+    top: -120px;
+    left: -116px;
+}
+#zx9_text{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 300px;
+    gap: 20px;
+    margin-bottom: 18%;
+}
+#zx9_text h3{
+    font-size: 36px;
+    letter-spacing: 1.3px;
+    line-height: 40px;
+    color: #fff;
+}
+#zx9_text p{
+    color: #fff;
+    opacity: 0.75;
+}
+#see_pdt_black{
+    width: 160px;
+    height: 48px;
+    border: none;
+    background-color: #000;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 2;
+}
+#zx7_model{
+    grid-row: 5/7;
+    background-image: url('../images/Homepage/Mobile/zx7_model.png');
+    height: 320px;
+    border-radius: 8px;
+}
+#zx7_text{
+    width: 80%;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    margin-left: 20px;
+}
+.see_pdt_white{
+    width: 160px;
+    height: 48px;
+    border: none;
+    background-color: transparent;
+    border: 1px solid black;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+#yx1_picture{
+    grid-row: 7/8;
+    background-image: url('../images/Homepage/Mobile/yx1_model.png');
+    height: 200px;
+    border-radius: 8px;
+}
+#yx1_model{
+    grid-row: 8/9;
+    background-color: #f1f1f1;
+    height: 200px;
+    border-radius: 8px;
+}
+#yx1_text{
+    width: 80%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    margin-left: 20px;
+}
+
+    /* COOKIES SECTION */
+#cookies_container{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    margin: auto;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.4);
+    display: none;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+}
+#cookies{
+    width: fit-content;
+    max-width: 1440px;
+    background-color: #D87D4A;;
+    color: #fff;
+    text-shadow: 1px 1px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    gap: 8%;
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+}
+#cookies_text{
+    width: 80%;
+    height: 150px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#cookies_btn{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    gap: 15%;
+}
+#accept{
+    padding: 19px 50px;
+
+}
+#manage{
+    padding: 10px 40px;
+}
+
+/* MEDIA QUERY TABLET */
+@media only screen and (min-width: 768px) {
+
+
+    #mainPage{
+        background-image: url('../images/Homepage/Tablet/Audiophile_headphones.png');
+        height: 729px;
+    }
+    /* NAVBAR */
+    #navbar{
+        justify-content: space-around;
+    }
+    #nav_menu_up{
+        display: flex;
+    }
+    #logo{
+        margin-right: 50%;
+    }
+    /* NEW PRODUCT */
+    #new_pdt_page{
+        width: 52%;
+        justify-content: center;
+        align-items: center;
+        gap: 8%;
+        height: 100%;
+    }
+    #new_pdt_page h1{
+        font-size: 56px;
+        line-height: 58px;
+    }
+    #new_pdt_page p{
+        width: 85%;
+    }
+    #pic_text{
+        display: flex;
+        align-items: center;
+    }
+    #nav_menu_up{
+        display: none;
+    }
+    #new_pdt_text{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5%;
+    }
+    /* MODELS SECTION */   
+        /* ZX9 MODEL */
+    #models_grid{
+        grid-template-columns: 1fr 1fr;
+    }    
+    #zx9_model{
+        width: 689px;
+        height: 720px;
+        grid-column: 1/3;
+    }
+    #inner_circle{
+        width: 472px;
+        height: 472px;
+        top: -65px;
+        left: 100px;
+    }
+    #middle_circle{
+        width: 542px;
+        height: 542px;
+        top: -100px;
+        left: 65px;
+    }
+    #outer_circle{
+        width: 944px;
+        height: 944px;
+        top: -310px;
+        left: -132px;
+    }
+    #zx9_picture{
+        width: 200px;
+        left: 240px;
+    }
+    #zx9_text{
+        margin-bottom: 11%;
+        width: 50%;
+    }
+    #zx9_text h3{
+        font-size: 56px;
+        letter-spacing: 2px;
+        line-height: 58px;
+    }
+    #zx9_text p{
+        margin-bottom: 3%;
+    }
+        /* ZX7 MODEL */
+    #zx7_model{
+        grid-column: 1/2;
+        background-image: url('../images/Homepage/Tablet/zx7_tablet.png');
+        grid-column: 1/3;
+    }
+    #zx7_text{
+        margin-left: 10%;
+    }
+    /* YX1 MODEL */
+    #yx1_picture{
+        background-image: url('../images/Homepage/Tablet/yx1_tablet.png');
+        grid-row: 7/9;
+        height: 320px;
+    }
+    #yx1_model{
+        grid-row: 7/9;
+        height: 320px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    /* NAVIGATION BAR */
+    #navbar{
+        width: 1110px;
+        justify-content: space-between;
+    }
+    #menu_bars{
+        display: none;
+    }
+    #nav_menu_up{
+        display: flex;
+        gap: 10%;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        margin-left: -50%;
+    }
+    /* SEPARATION LINE */
+    #separation_line{
+        width: 1110px;
+    }
+    /* MAIN PAGE PRESENTATION */
+    #mainPage{
+        background-color: #0E0E0E;
+        background-image: none;
+        height: 729px;
+        justify-content: right;
+    }
+    #pic_text{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+    }
+    #new_pdt_page{
+        width: 600px;
+        height: 640px;
+        background-image: url('../images/Homepage/Tablet/Audiophile_headphones.png');
+        background-position: center bottom;
+        margin-right: 10%;
+    }
+    #new_pdt_text{
+        width: 400px;
+        height: 636px;
+        position: absolute;
+        top: 0;
+        left: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: left;
+        gap: 5%;
+    }
+    #new_pdt_text h1{
+        font-size: 56px;
+        line-height: 58px;
+    }
+    #new_pdt_text p{
+        width: 85%;
+    }
+    /* MAIN PRODUCTS SECTION */
+    #category_pdt{
+        width: 1110px;
+        display: flex;
+        justify-content: center;
+    }
+    #category_grid{
+        width: 1110px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .categories{
+        width: 350px;
+        gap: 5%;
+     }
+    #zx9_model{
+        width: 1110px;
+        position: relative;
+    }
+    .category_pictures{
+        transform: translate(38%, -110%);
+    }
+    #yx1_picture_mobile{
+        transform: translate(34%, -110%);
+    }
+    /* MODEL SECTION */
+        /* ZX9 SPEAKER */
+    #zx9_model_picture{
+        background-image: url('../images/Homepage/Desktop/zx9_speaker_desktop.png');
+        position: absolute;
+    }
+        /* ZX7 SPEAKER */
+    #zx7_model{
+        background-image: url('../images/Homepage/Desktop/zx7_speaker_desktop.png');
+    }
+    #yx1_picture{
+        background-image: url('../images/Homepage/Desktop/yx1_earphones_desktop.png');
+    }
+}

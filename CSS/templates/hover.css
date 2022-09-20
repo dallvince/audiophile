@@ -1,0 +1,47 @@
+ /* HOVER EFFECTS */
+#nav_menu_up a:hover{
+    color: #D87D4A;
+    cursor: pointer;
+    }
+#cart_icon:hover{
+    color: #D87D4A;
+    cursor: pointer;
+}    
+.see_pdt_btn:hover{
+    background-color: #fbaf85;
+    cursor: pointer;
+}
+.count:hover{
+    cursor: pointer;
+}
+.category_shop:hover{
+    color: #D87D4A;
+    cursor: pointer;
+}
+.category_shop:visited{
+    color: #000;
+    text-decoration: none;
+}
+#see_pdt_black:hover{
+    background-color: #4C4C4C;
+    cursor: pointer;
+}
+.see_pdt_white:hover{
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+#nav_menu a:hover{
+    color: #D87D4A;
+    cursor: pointer;
+}
+#footer_icons i:hover{
+    color: #D87D4A;
+    cursor: pointer;
+}
+#go_back a:hover{
+    cursor: pointer;
+}
+#logo:hover, #footer_logo:hover{
+    cursor: pointer;
+}

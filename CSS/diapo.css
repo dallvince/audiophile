@@ -1,0 +1,48 @@
+@import url(/CSS/templates/body.css);
+
+main{
+    width: 15%;
+    margin: auto;
+}
+
+.diapo{
+    position: relative;
+    overflow: hidden;
+}
+
+#nav_right, #nav_left{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 3em;
+}
+
+#nav_right{
+    right: 20px;
+}
+
+#nav_left{
+    left: 20px;
+}
+
+.elements{
+    display: flex;
+    transition: 1s linear;
+}
+
+.element{
+    flex: 1 0 100%;
+    position: relative;
+    width: 200px;
+    height: 400px;
+}
+
+.element img{
+    width: 100%;
+}
+
+.caption{
+    text-align: center;
+
+}
