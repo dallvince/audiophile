@@ -3,6 +3,6 @@
 
     unset($_SESSION);
     session_destroy();
-    header('Location: Homepage.php');
+    header('Location: index.php');
 
 ?>

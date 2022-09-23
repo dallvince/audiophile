@@ -11,38 +11,7 @@
 
 <div id="all_container">
     <!-- NAVIGATION BAR -->
-    <section id="mainPage">
-        <nav id="navbar">
-            <i id="menu_bars" class="fa-solid fa-bars" aria-expanded= "false">
-                <div id="myDropdown" class="dropdown-content">
-                    <div class="link_container">
-                        <a href="Homepage.php">Home</a>
-                    </div>
-                    <div class="link_container">
-                        <a href="HeadphonePage.php">Headphones</a>
-                    </div>
-                    <div class="link_container">
-                        <a href="SpeakersPage.php">Speakers</a>
-                    </div>
-                    <div class="link_container">
-                        <a href="EarphonesPage.php">Earphones</a>
-                    </div>
-                    <div class="link_container">
-                        <a href="#">My account</a>
-                    </div>
-                </div>
-            </i>
-            <img onclick="window.location = '/Homepage.php'" id="logo" src="images/Homepage/Mobile/audiophile_Logo.png" alt="Audiophile logo">
-            <div id="nav_menu_up">
-                <a href="Homepage.php">Home</a>
-                <a href="HeadphonePage.php">headphones</a>
-                <a href="SpeakersPage.php">speakers</a>
-                <a href="EarphonesPage.php">earphones</a>
-            </div>
-            <a href="checkoutPage.php"><i id="cart_icon" class="fa-solid fa-cart-shopping"></i></a>
-        </nav>
-        <div id="separation_line"></div>
-    </section>  
+    <?php include "navbar.php" ?>
 
     <!-- GO BACK -->
     <div onclick="history.back()" id="go_back">
@@ -172,10 +141,10 @@
     <section id="footer">
         <div id="footer_line"></div>
         <div id="first_row">
-            <img onclick="window.location = 'Homepage.php'" id="footer_logo" src="images/Homepage/Mobile/audiophile_Logo.png" alt="Audiophile logo">
+            <img onclick="window.location = 'index.php'" id="footer_logo" src="images/Homepage/Mobile/audiophile_Logo.png" alt="Audiophile logo">
         </div>    
         <div id="nav_menu">
-            <a href="Homepage.php">Home</a>
+            <a href="index.php">Home</a>
             <a href="HeadphonePage.php">headphones</a>
             <a href="SpeakersPage.php">speakers</a>
             <a href="EarphonesPage.php">earphones</a>
